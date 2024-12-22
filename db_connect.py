@@ -1,8 +1,14 @@
 from mysql.connector import connect
 
+USERNAME="azamat"
+PASSWORD="27052705"
+
+
 db = connect(
-    user='azamat',
-    password="27052705",
-    host="localhost",
-    database="Application"
+    user = USERNAME,
+    password = PASSWORD,
+    host = "localhost",
+    database = "Application"
 )
+dbc = db.cursor()
+db.autocommit = True

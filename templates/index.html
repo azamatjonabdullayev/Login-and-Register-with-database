@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>Register</title>
 </head>
 <body>
@@ -24,9 +24,9 @@
                 </button>
             </div>
             <div class="social-icons">
-                <img src="linkedin.png" alt="linkedin">
-                <img src="google.png" alt="google">
-                <img src="telegram.png" alt="telegram">
+                <img src="{{url_for('static', filename='images/linkedin.png')}}" alt="linkedin">
+                <img src="{{url_for('static', filename='images/google.png')}}" alt="google">
+                <img src="{{url_for('static', filename='images/telegram.png')}}" alt="telegram">
             </div>
 <!-- **************************************************************** -->
             <form action="#" class="input-group" id="login">
@@ -34,7 +34,7 @@
                 required>
                 <input type="password" class="input-field" placeholder="Enter password..."
                 required>
-                <input type="checkbox" class="check-box"><span>Remember me</span>
+                <label><input type="checkbox" class="check-box">Remember me</label>
                 <button type="submit" class="submit-btn">
                     Log in
                 </button>
