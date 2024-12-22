@@ -112,3 +112,9 @@ span {
 #register {
     left: 450px;
 }
+
+.another {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

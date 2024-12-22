@@ -2,8 +2,8 @@ CREATE DATABASE IF NOT EXISTS Application;
 USE Application;
 CREATE TABLE users(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100),
-    username VARCHAR(100),
-    password VARCHAR(255),
-    email VARCHAR(256)
+    name VARCHAR(100) NOT NULL,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(256) UNIQUE NOT NULL
 )

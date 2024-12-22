@@ -29,12 +29,12 @@
                 <img src="{{url_for('static', filename='images/telegram.png')}}" alt="telegram">
             </div>
 <!-- **************************************************************** -->
-            <form action="#" class="input-group" id="login">
+            <form action="/login" class="input-group" id="login" method="post">
                 <input type="text" class="input-field" placeholder="Enter username..."
-                required>
+                required name="username">
                 <input type="password" class="input-field" placeholder="Enter password..."
-                required>
-                <label><input type="checkbox" class="check-box">Remember me</label>
+                required name="password">
+                <label><input type="checkbox" class="check-box" required>Remember me</label>
                 <button type="submit" class="submit-btn">
                     Log in
                 </button>
@@ -42,14 +42,14 @@
 
 <!-- ***************************************************************** -->
 
-            <form action="#" class="input-group" id="register">
-                <input type="text" class="input-field" placeholder="Enter your name..."
+            <form action="/register" class="input-group" id="register" method="post">
+                <input type="text" class="input-field" placeholder="Enter your name..." name="name"
                 required>
-                <input type="text" class="input-field" placeholder="Enter username..."
+                <input type="text" class="input-field" placeholder="Enter username..." name="username"
                 required>
-                <input type="email" class="input-field" placeholder="Enter email..."
+                <input type="email" class="input-field" placeholder="Enter email..." name="email"
                 required>
-                <input type="password" class="input-field" placeholder="Enter password..."
+                <input type="password" class="input-field" placeholder="Enter password..." name="password"
                 required>
                 <button type="submit" class="submit-btn">
                     Register
